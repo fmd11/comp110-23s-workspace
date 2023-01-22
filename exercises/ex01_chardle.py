@@ -6,7 +6,7 @@ word: str = input("Enter a 5-character word: ")
 if len(word) > 5:
     print("Error: Word must contain 5 characters")
     exit()
-if  len(word) < 5:
+if len(word) < 5:
     print("Error: Word must contain 5 characters")
     exit()
 
@@ -20,7 +20,7 @@ if len(letter) < 1:
 
 number: int = 0
 
-print("Searching for " + letter + " in "+ word)
+print("Searching for " + letter + " in " + word)
 
 if letter == word[0]:
     print(letter + " found at index 0")
