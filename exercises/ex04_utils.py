@@ -1,7 +1,38 @@
 """EX04 - 'list' Utility Functions"""
-x: int = 1
 
-def f(y: int) -> int:
-  return x + y
+__author__ = "730320788"
 
-print(f(x + 1))
+def max(input: list[int]) -> int:
+    """returns the largest int in the List."""
+    largest_int: int = input[0]
+    idx_2: int = 0
+    if len(input) == 0:
+        raise ValueError("max() arg is an empty List")
+    while idx_2 < len(input):
+        if input[idx_2] > largest_int:
+            largest_int = input[idx_2]
+        idx_2 = idx_2 + 1
+    return largest_int
+
+def all(int_list: list[int], given_int: int) -> bool:
+    """ indicates if ints in list are the same as the given int""" 
+    if len(int_list) == 0:
+        return False
+    idx: int = 0 
+    while idx < len(int_list):
+        if int_list[idx] != given_int:
+            return False
+        else:
+            idx = int_list + 1
+    return True
+
+def is_equal(list1: list[int], list2: list[int]) -> bool:
+    """indicates if every element at every index is = in 2 lists."""
+    idx_3: int = 0 
+    if len(list1) != len(list2):
+        return False
+    while idx_3 <len(list1):
+        if list1[idx_3] != list2[idx_3]:
+            return False
+        idx_3 = idx_3 + 1
+    return True
