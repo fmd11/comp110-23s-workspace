@@ -6,4 +6,8 @@ grocery_list.append("bread")
 grocery_list[1] = "cereal"
 
 grocery_list.pop(2)
-print(grocery_list)
+
+
+names: list[str] = ["a", "b", "c"]
+for idx in range(0,3):
+    print(names[idx])
