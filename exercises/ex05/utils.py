@@ -8,9 +8,9 @@ def only_evens(ints: list[int]) -> list[int]:
     evens: list[int] = []
     idx: int = 0
     while idx < len(ints):
-        if ints[idx]%2 ==0:
+        if ints[idx] % 2 == 0:
             evens.append(ints[idx])
-        idx = idx +1
+        idx = idx + 1
     return evens
     # returns all numbers divisible by 2 from a list of integers.
 
@@ -21,15 +21,14 @@ def sub(given_list: list[int], first_int, second_int) -> list[int]:
     if first_int < 0:
         first_int = 0
     if second_int > len(given_list):
-            second_int = len(given_list)
+        second_int = len(given_list)
     if len(given_list) == 0 or first_int >= len(given_list) or second_int <= 0:
         subset = []
     while first_int < second_int:
         subset.append(given_list[first_int])
         first_int = first_int + 1
     return subset
-        # returns a list consisting of a subset of given_list.
-
+    # returns a list consisting of a subset of given_list.
 
 
 def concat(list1: list[int], list2: list[int]) -> list[int]:

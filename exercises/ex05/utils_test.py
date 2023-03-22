@@ -5,6 +5,7 @@ __author__ = "730320788"
 
 from exercises.ex05.utils import only_evens, concat, sub
 
+
 def test_1_only_evens() -> None:
     """Tests if the function will return a single integer if only one even interger is present."""
     int_list: list[int] = [1, 2, 3, 5]
@@ -26,21 +27,21 @@ def test_3_only_evens() -> None:
 def test_1_concat() -> None:
     """Tests if the function combines lists when one list is empty."""
     int_1list: list[int] = [11, 12, 13, 14]
-    int_2list: list[int ]= []
+    int_2list: list[int] = []
     assert concat(int_1list, int_2list)
 
 
 def test_2_concat() -> None:
     """Tests if the function combines lists with different lengthed integers."""
     int_1list: list[int] = [1, 2, 3, 4]
-    int_2list: list[int ]= [2100, 2200, 2300, 2400]
+    int_2list: list[int] = [2100, 2200, 2300, 2400]
     assert concat(int_1list, int_2list)
 
 
 def test_3_concat() -> None:
     """Tests if the function combines lists that are different lengths."""
     int_1list: list[int] = [1, 2, 3, 4]
-    int_2list: list[int ]= [5, 6, 7, 8, 9, 10, 11]
+    int_2list: list[int] = [5, 6, 7, 8, 9, 10, 11]
     assert concat(int_1list, int_2list)
 
 
